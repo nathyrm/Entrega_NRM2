@@ -1,0 +1,274 @@
+/* HEADER */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+html {
+    font-size: 62.5%;}
+
+.encabezado {
+    background-image: url("../img/encabeza.jpg");
+    background-position: center;
+    height: 18vh;
+    width: 100%;
+    position: relative;
+    opacity: 80%;
+    grid-area: header;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: indigo;
+    font-family: 'Dosis', sans-serif; 
+    font-size: 2.5rem;
+    font-weight: 2000;
+    margin: 3rem;
+    padding: 3rem;
+    text-align: center;
+    
+ }
+
+.titulo {   
+    text-align: center;
+    color: indigo;
+    font-family:'Dosis', sans-serif;
+   font-weight: 2000;
+   font-size: 6rem;
+   height: 10rem;
+    width: 50rem;
+    position: relative;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+nav {
+    background-color: rgb(222, 205, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    grid-area: nav;
+}
+
+h2 {
+    text-align: center;
+    color: indigo;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 70px;
+    font-size: 3.5rem;
+    padding: 1,5rem;
+    margin: 1.5rem;
+    }
+
+.titulo4 {
+    text-align: left;
+    color: indigo;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 70px;
+    font-size: 3rem;
+}
+
+header {
+    background-color: rgb(240, 226, 240);
+    }
+
+li { 
+    list-style-type: none;
+    display: inline-block;
+    }
+
+body{
+    margin: 0;
+    background-color:rgb(240, 226, 240);
+    font-family: 'Dosis', sans-serif;
+    color: indigo;
+    position: relative;
+    padding-bottom: 8rem;
+    min-height: 100vh;
+   }
+
+/* MAIN */
+
+main {
+    background-color:rgb(243, 236, 243) ;
+}
+
+section { 
+    margin: 1.5rem;
+    padding: 1 rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(243, 236, 243);
+    box-shadow: 7px -6px 5px 0px rgba(133,130,133,1);
+}
+
+section img {
+    width: 40rem;
+    border-radius: 5px;
+}
+
+section button {
+    border-radius: 5px;
+    background-color:rgb(222, 205, 233);
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    border-color: blueviolet;
+}
+
+section img {
+    width: 300px;
+}
+
+.parrafo {
+    text-align: justify;
+    font-size: 2.2rem;
+    font-family: 'Dosis', sans-serif;
+    color: indigo;
+    }
+
+.lugarA {
+    grid-area: lugarA;
+}
+
+.lugarB {
+    grid-area: lugarB;
+}
+
+.lugarC {
+    grid-area: lugarC;
+}
+
+.lugarD {
+    grid-area: lugarD;
+}
+
+.gridPadre {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "lugarA lugarB lugarC lugarD"
+    "lugarA lugarB lugarC lugarD"
+    ;
+}
+
+/* Tablet */
+@media (min-width: 700px) and (max-width:1100px){
+    .gridPadre {
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "lugarA lugarB"
+        "lugarC lugarD" 
+        "footer footer";
+    }
+}
+
+/*Movil */
+@media (max-width: 699px){
+    .gridPadre {
+        grid-template-areas: 
+        "header"
+        "nav"
+        "lugarA"
+        "lugarB"
+        "lugarC"
+        "lugarD" 
+        "footer";
+    }
+    html {
+        font-size: 80%;
+    }
+    nav {
+            position: static;
+    }
+}   
+
+.comidaA {
+    grid-area: comidaA;
+}
+
+.comidaB {
+    grid-area: comidaB;
+}
+
+.comidaC {
+    grid-area: comidaC;
+}
+
+.comidaD {
+    grid-area: comidaD;
+}
+
+.gridPadre {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "comidaA comidaB comidaC comidaD"
+    "comidaA comidaB comidaC comidaD"
+    "footer footer footer footer";
+}
+
+/* Tablet */
+@media (min-width: 700px) and (max-width:1100px){
+    .gridPadre {
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "comidaA comidaB"
+        "comidaC comidaD" 
+        "footer footer";
+    }
+}
+
+/*Movil */
+@media (max-width: 699px){
+    .gridPadre {
+        grid-template-areas: 
+        "header"
+        "nav"
+        "comidaA"
+        "comidaB"
+        "comidaC"
+        "comidaD"
+        "footer";
+    }
+}
+img { 
+    display: block;
+   margin: 0px auto;
+   width: 500px;
+}
+
+.formulario {
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Dosis', sans-serif;
+    color: indigo;
+}
+
+.footer {
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Dosis', sans-serif;
+        color: indigo;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+}
+
+
+
+
+
+
